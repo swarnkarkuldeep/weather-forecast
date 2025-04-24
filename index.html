@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Geolocation & City Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather App</h1>
+      <p class="subtext">Check real-time weather by location or search for a city</p>
+
+      <!-- City search input and button -->
+      <div class="search-city">
+        <input type="text" id="city-input" placeholder="Enter city name" />
+        <button id="city-search-btn">Search Weather</button>
+      </div>
+
+      <!-- Weather display -->
+      <div class="weather-display">
+        <div class="weather-info">
+          <h2 id="temperature">--°</h2>
+          <p id="description">--</p>
+          <p id="location">Locating...</p>
+        </div>
+        <img id="random" src="img/default.png" alt="Weather icon" />
+      </div>
+
+      <!-- Extra weather details -->
+      <div class="extra-details">
+        <p>Humidity: <span id="humidity">--</span>%</p>
+        <p>Wind Speed: <span id="wind-speed">--</span> km/h</p>
+      </div>
+
+      <!-- Refresh and temperature unit toggle buttons -->
+      <div class="buttons">
+        <button id="refresh-btn">Refresh Weather</button>
+        <button id="unit-toggle">Switch to °F</button>
+      </div>
+
+      <p class="note">Note: Please allow location access for accurate weather data.</p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
